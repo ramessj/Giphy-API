@@ -1,3 +1,23 @@
+const startApp = () =>{
+	const body = document.getElementById("body");
+	body.innerHTML = `<div class="searcher">
+	<label for="searchGif">Buscar:</label>
+	<input type="search" name="searchGif" id="searchGif" />
+
+</div>
+<div id="searchingDiv" class="searchingDiv">
+
+</div>
+
+<div class="imgContainer"><img src="#" alt="img from api" /></div>
+<div>
+		<button type="button" id="btnNewGif" class="btnNewGif">REFRESCAR</button>
+
+</div>`
+};
+
+startApp();
+
 const img = document.querySelector("img");
 
 const btnRefresh = document.getElementById("btnNewGif");
